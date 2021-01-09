@@ -1,0 +1,11 @@
+on fs
+    wait /dev/block/platform/soc/${ro.boot.bootdevice}
+    start load_ts_firmware
+
+service load_ts_firmware /system/bin/load_ts_firmware.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+
