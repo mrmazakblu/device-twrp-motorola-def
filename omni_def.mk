@@ -30,9 +30,3 @@ PRODUCT_MANUFACTURER := motorola
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/$(PRODUCT_BRAND)/$(PRODUCT_DEVICE)/device.mk)
 
-# Attemp to add firmware to recovery/root
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/firmware/modules,recovery/root/vendor/firmware)
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/firmware/init.recovery.ts-firmware.rc:recovery/root/vendor/etc/init/init.recovery.ts-firmware.rc
-
-
-

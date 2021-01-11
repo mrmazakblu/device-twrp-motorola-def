@@ -15,8 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/omni_def.mk
+	$(LOCAL_DIR)/omni_def.mk \
+	$(LOCAL_DIR)/device.mk
 	
 COMMON_LUNCH_CHOICES := \
-omni_def-eng \
+omni_def-eng
 

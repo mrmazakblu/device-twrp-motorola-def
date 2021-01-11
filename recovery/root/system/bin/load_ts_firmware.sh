@@ -1,6 +1,6 @@
 #!/sbin/sh
 
-module_path=/vendor/firmware
+module_path=/vendor/lib/modules
 
 touch_class_path=/sys/class/touchscreen
 touch_path=
